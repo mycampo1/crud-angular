@@ -9,9 +9,9 @@ import { PersonaComponent } from 'src/persona/persona.component';
 })
 export class AppComponent {
   personaArray: PersonaComponent[] = [
-    { id: 1, nombre: 'Ancheloty', apellido: 'casemiro', pais: 'españa' },
-    { id: 2, nombre: 'modrick', apellido: 'perez', pais: 'colombia' },
-    { id: 3, nombre: 'messi', apellido: 'cr7', pais: 'brasil' },
+    { id: 1, nombre: 'Cristiano', apellido: 'Ronaldo', pais: 'Portugal' },
+    { id: 2, nombre: 'Leonel', apellido: 'Messi', pais: 'Argentina' },
+    { id: 3, nombre: 'Andres', apellido: 'Iniesta', pais: 'España' },
   ];
 
   cpPersona: PersonaComponent = new PersonaComponent();
@@ -24,7 +24,7 @@ export class AppComponent {
       alert("gracias por tu eleccion")
     }
 
-    
+
   }
 
   abrirEditar(personaA: PersonaComponent) {
@@ -38,4 +38,7 @@ export class AppComponent {
     }
     this.cpPersona = new PersonaComponent();
   }
+
+  champion: string ="assets/img/ch.png";
+
 }
